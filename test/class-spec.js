@@ -2,13 +2,15 @@ const chai = require("chai");
 const expect = chai.expect;
 
 const { Word } = require("../class");
-
+let word;
 describe("Word", function () {
   describe("Word constructor function", function () {
     it('should have a "word" property', function () {
-      expect.fail("replace with your code");
+      expect('word').to.have.property()
+
+
     });
-  
+
     it('should set the "word" property when a new word is created', function () {
       expect.fail("replace with your code");
     });
@@ -25,7 +27,7 @@ describe("Word", function () {
       expect.fail("replace with your code");
     });
   });
-  
+
   describe("pigLatin function", function () {
     it("should return the word converted to pig latin", function () {
       expect.fail("replace with your code");

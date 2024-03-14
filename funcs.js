@@ -1,15 +1,29 @@
 function isFive(num) {
-  // Your code here
+  if (num === 5) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isOdd(number) {
-  // Your code here
+  if (typeof number !== "number") {
+    throw new Error();
+  }
+  if (number % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 function myRange(min, max, step = 1) {
-  // Your code here
+let array = [];
+ for(let i = min; i<= max; i += step){
+ array.push(i);
+ }
+ return array;
 }
-
 
 module.exports = { isFive, isOdd, myRange };
 //test
